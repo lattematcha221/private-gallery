@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.video-background {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Memastikan video mengisi seluruh area */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Latar belakang transparan gelap */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Menempatkan konten di tengah */
+    text-align: center; /* Rata tengah teks */
+    color: white; /* Warna teks */
+}
+
+.logo {
+    max-width: 200px; /* Lebar maksimum logo */
+    margin-bottom: 20px; /* Jarak bawah logo */
+}
+
+h1 {
+    font-size: 2.5em; /* Ukuran font judul */
+    margin-bottom: 20px; /* Jarak bawah judul */
+}
+
+.continue-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25b0d3; /* Warna hijau */
+    color: white; /* Warna teks */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    border-radius: 5px; /* Sudut melengkung */
+    transition: background-color 0.3s; /* Transisi untuk hover */
+}
+
+.continue-btn:hover {
+    background-color: #1ebe57; /* Warna saat hover */
+}
